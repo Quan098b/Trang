@@ -1,0 +1,27 @@
+{
+  "name": "warehouse-picking-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env VITE_CONFIG_NATIVE_IGNORE_WARNING=true vite",
+    "build": "npm run typecheck && cross-env VITE_CONFIG_NATIVE_IGNORE_WARNING=true vite build",
+    "preview": "cross-env VITE_CONFIG_NATIVE_IGNORE_WARNING=true vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.node.json",
+    "test": "cross-env VITE_CONFIG_NATIVE_IGNORE_WARNING=true vitest run"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "cross-env": "^10.1.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}
